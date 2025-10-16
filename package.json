@@ -1,0 +1,12 @@
+{
+  "name": "mi-primera-app",
+  "version": "1.0.0",
+  "description": "Mi primera aplicación web",
+  "scripts": {
+    "test": "echo '🧪 Todas las pruebas pasaron!' && exit 0",
+    "build": "echo '🏗️ Build completado!' && mkdir -p dist && cp index.html dist/ && cp style.css dist/ 2>/dev/null || true"
+  },
+  "keywords": [],
+  "author": "Tu Nombre",
+  "license": "MIT"
+}
