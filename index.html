@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🎉 ¡Mi App Funciona PERFECTO! 🎉</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .container {
+            background: rgba(255,255,255,0.1);
+            padding: 40px;
+            border-radius: 15px;
+            display: inline-block;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 ¡Mi App Funciona! 🎉</h1>
+        <p>Esta es mi primera aplicación desplegada automáticamente</p>
+        <button onclick="cambiarColor()">Haz clic aquí</button>
+        <p id="mensaje"></p>
+    </div>
+
+    <script>
+        function cambiarColor() {
+            const colores = ['#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4', '#FFEAA7'];
+            const colorAleatorio = colores[Math.floor(Math.random() * colores.length)];
+            document.body.style.background = `linear-gradient(135deg, ${colorAleatorio} 0%, #764ba2 100%)`;
+            document.getElementById('mensaje').textContent = '¡Genial! El botón funciona ✅';
+        }
+    </script>
+</body>
+</html>
